@@ -178,7 +178,7 @@ useEffect(() => {
       {remainingTime > 0 && (
         <p className={styles.timer}>⏳ {remainingTime}s left</p>
       )}
-      <p>Кредити: {Math.floor(gameState.credits)}</p>
+      <p>Credits: {Math.floor(gameState.credits)}</p>
 
       <div className={styles.section}>
         <ClickButton
