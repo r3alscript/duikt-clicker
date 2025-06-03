@@ -22,7 +22,6 @@ export default function CasePanel({ gameState, setGameState }) {
       const timeLeft = Math.max(0, reward.duration - elapsed);
 
       if (timeLeft <= 0) {
-        // Бонус завершився — скидаємо
         setGameState(prev => ({
           ...prev,
           clickValue: reward.originalClickValue ?? 1,
