@@ -1,0 +1,86 @@
+.caseGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.caseCard {
+  width: 240px;
+  background-color: #111122;
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #00ffff;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.progress {
+  font-size: 12px;
+  margin: 6px 0;
+  color: #bbb;
+}
+
+.buttonWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.caseCard button {
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #9900ff, #00ffff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.caseCard button:disabled {
+  background: #333;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.bonusIndicator {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #c8ffdd;
+  background-color: #111;
+  border-radius: 8px;
+  padding: 4px 8px;
+  display: inline-block;
+  font-size: 14px;
+}
+.timer {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-top: -10px;
+  text-align: center;
+}

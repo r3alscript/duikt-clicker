@@ -1,0 +1,57 @@
+.prestigeBox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px 0;
+  border: 2px solid #ff00cc;
+  border-radius: 10px;
+}
+
+.prestigeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #12001f;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #ff00cc;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff00cc;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.title {
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+.chevron {
+  font-size: 20px;
+  color: cyan;
+}
+
+.prestigeContent {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.prestigeButton {
+  margin-top: 16px;
+  padding: 10px;
+  background-color: #ff00cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.prestigeButton:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}

@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  min-height: 100vh;
+  padding: 20px;
+  gap: 20px; 
+}
+.section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.theme-neon {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #8000ff);
+  background-size: 400% 400%;
+  animation: neonPulse 8s ease infinite;
+
+  .section button {
+    background: linear-gradient(to right, #39ff14, #a000ff);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 8px #39ff14;
+    border: none;
+  }
+}
+
+@keyframes neonPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
